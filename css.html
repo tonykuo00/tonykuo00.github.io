@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>CSS</title>
+	<!-- CSS語法寫在style標籤內 -->
+	<style>
+	/* CSS註解在此 */
+	
+	/* CSS選擇器 */
+	/* class選擇器 */
+	.title{font-size:50px; color:red;}
+    .contect{width:500px; margin-top:10px; padding:5px; border:1px dashed black}
+	.improtant{background-color:#dddddd;}
+	
+	/* id選擇器 */
+	#del {text-decoration:line-through}
+	
+	/* 標籤名稱選擇器 */
+	body{background-color:#eeeeee}
+	</style>
+	</head>
+	<body>
+		<!--
+			標籤顯示模式 (display)
+				- inline 行內
+				- block 區塊(自動換行)
+		-->
+		<!-- width 和 height 對inline標籤無效 -->
+		<div class="title">繃繃龍繃繃</div>
+		<div class="contect">
+			0 0 0  0 安安安安
+			<div class="improtant">hello space</div>
+		</div>
+		
+		<div class="title">繃繃龍繃繃</div>
+		<div class="contect">
+			第二組測試
+			<div id="del" calss="improtant">hello space</div>
+		</div>
+		
+	</body>
+</html>
