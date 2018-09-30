@@ -1,0 +1,62 @@
+.title{
+	font-size:36px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:10px;
+}
+.menu-desktop{
+	display:block;
+}
+.menu-mobile{
+	display:none;
+}
+
+.frame{
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+}
+/*
+
+	寬度 >1200px
+	總寬度固定在1200px
+
+*/
+.box{
+	width:280px;margin:10px;
+	background-color:gray;
+}
+/*
+	階層式選擇器，搭配其他選擇器使用
+	外層選擇器>內層選擇器{}
+*/
+.box>img{
+	width:100%;
+}
+/* CSS3 media Query */
+@media (max-width:1200px){
+	/* 如螢幕小於1200px，套用這個值 */
+	.frame{
+		flex-wrap:wrap
+	}
+}.box{
+	width:45%
+}
+@media (max-width:1200px){
+	/* 如螢幕小於500px，套用這個值 */
+	.title{
+		font-size:24pt
+	}
+	.frame{
+		flex-wrap:wrap
+	}
+	.box{
+		width:90%
+	}
+	.menu-desktop{
+		display:none;
+	}
+	.menu-mobile{
+		display:block;
+	}
+}
