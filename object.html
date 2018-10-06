@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>物件Object</title>
+		<script>
+			//物件：底下可以裝更多資料的東東
+			/*
+				建立物件：
+					let 變數名={
+						成員名:成員資料;
+						成員名:成員資料;
+						...
+					};
+				使用物件：
+					物件.成員名
+			*/
+			/*
+			let test={
+				x:3,
+				y:4,
+				show:function(){
+				//this 是什麼？
+				//this 是函式的綁定物件
+					console.log("印出物件本身", this);
+					alert(this.x+","+this.y);
+				}
+			};
+			console.log("印出物件本身", test);
+			console.log("印出物件成員", test.x, test.y);
+			let result=test.x+test.y;
+			console.log("操作成員資料後的結果", result);
+			test.x=100;
+			console.log("修改物件成員x的資料", test.x);
+			test.show();
+			*/
+		/*
+			建立變數player，放進一個物件
+			包含以下成員：
+				name: 字串，表示名子
+				hp: 數字，表示血量
+				report: 函式，印出這個物件的名子和血量
+				
+			player.report();
+		*/
+		
+		let player={
+			name: "CCD",
+			hp: 1235,
+			report:function(){
+				alert(this.name+","+this.hp);
+			}
+		};
+		player.report();
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>
+

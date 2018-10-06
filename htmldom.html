@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>HTML DOM - 管理一群物件</title>
+		<script>
+		//多層次的物件結構
+		/*
+		let objs={
+			level1:{
+				x:3, y:4
+			},
+			name:"第一層成員"
+		};
+		console.log(objs);
+		console.log(objs.name);
+		console.log(objs.level1.x);
+		*/
+		
+		/*
+			瀏覽器內建變數 window;
+			let window=HTML DOM;
+		*/
+		window.alert("Hello");
+		console.log("視窗尺寸",window.innerWidth, window.innerHeight);
+		console.log("螢幕尺寸",window.screen.width, window.screen.height);
+		if(window.screen.width<500){
+			window.location="https://www.google.com";
+		}
+		</script>
+	</head>
+	<body>
+		Hello HTML DOM
+	</body>
+</html>

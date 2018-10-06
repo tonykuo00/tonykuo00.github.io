@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+		<title>RWD 手機選單</title>
+		<link rel="stylesheet" type="text/css" href="RWD2.css" media="all" />
+		<script>
+			function showMenu(){
+				let divElement=document.querySelector("#menuFun");
+				if (divElement.className=="menu"){
+					divElement.className="menuout";
+				}
+				else{
+					divElement.className="menu";
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<nav>
+			<div onclick="showMenu();" class="trigger"><img class="size" src="menuicon.png"></div>
+			<div class="title">Google Developer</div>
+			<div id="menuFun" class="menu">
+				<div class="item">Home</div>
+				<div class="item">Events</div>
+				<div class="item">Product Index</div>
+			</div>
+		</nav>
+	</body>
+</html>

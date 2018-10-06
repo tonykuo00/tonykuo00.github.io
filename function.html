@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>函式 Function</title>
+		<script>
+		
+		/*
+		函式
+		function test(){
+			let sum=0;
+			let n=1;
+			while (n<=50){
+				sum=sum+n;
+				n++;
+			}
+			console.log(sum);
+		}
+		//執行函式 函式名(參數);
+		test(); test(); test();
+		*/
+		/*帶有參數的函式
+		function test(max){
+			let sum=0;
+			let n=1;
+			while (n<=max){
+				sum=sum+n;
+				n++;
+			}
+			console.log(sum);
+		}
+		test(50);
+		test(100);
+		test(1000);
+		*/
+		//帶有回傳值的函式：函式內可使用return回傳值
+		function test(max){
+			let sum=0;
+			let n=1;
+			while (n<=max){
+				sum=sum+n;
+				n++;
+			}
+			//console.log(sum);
+			return sum;
+		}
+		let value=test(50)*test(10);
+		console.log(value);
+		//取得函式本身 VS 呼叫函式
+		console.log("取得函式本身",test);
+		console.log("呼叫函式",test(50));
+		//函式的另一種寫法
+		/*
+			let 變數/函式名=function(參數列表){
+				函式內程式碼 *1000行
+				return 回傳值;
+			};
+		*/
+		let hello=100;
+		console.log(hello);
+		//hello(); 數字不能呼叫
+		hello=function(){
+			alert("Hello");
+		};
+		hello();
+		</script>
+	</head>
+</html>

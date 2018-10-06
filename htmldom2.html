@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>HTML DOM - 操作網頁介面</title>
+		<script>
+		/*
+		function change(){
+			//1. 抓出想要操作的標籤物件(HTML Element)
+			console.log(window.document.body);
+			//2. 對標籤物件進行修改
+			console.log("body物件的innerHTML屬性",window.document.body.innerHTML);
+			window.document.body.innerHTML="呵呵<b>呵呵</b>，新der";
+		}
+		*/
+		function change(){
+			//1. 抓出想要操作的標籤物件(HTML Element)
+			//document.querySelector("CSS選擇器");
+			let divElement=document.querySelector("#content");
+			console.log(divElement);
+			//2. 對標籤物件進行修改
+			if (divElement.className=="hide"){
+				divElement.className="";
+			}
+			else{
+				divElement.className="hide";
+			}
+			divElement.innerHTML="Hello Selector";
+			divElement.className="test";
+			//3. 透過修改物件的style屬性，修改單一標籤的CSS設定
+			/*
+			console.log(divElement.style);
+			divElement.style.color="red";
+			divElement.style.fontSize="300px";
+			*/
+		}
+		function change2(){
+			//1. 抓出想要操作的標籤物件(HTML Element)
+			//document.querySelector("CSS選擇器");
+			let divElement=document.querySelector("#content");
+			console.log(divElement);
+			//2. 對標籤物件進行修改
+			if (divElement.className=="hide"){
+				divElement.className="";
+			}
+			else{
+				divElement.className="hide";
+			}
+			//3. 透過修改物件的style屬性，修改單一標籤的CSS設定
+		}
+		</script>
+		<style>
+			.hide{
+				display:none;
+			}
+			.test{
+				color:red;
+				font-size:250px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>Title</div>
+		<div id="content">Hello HTML DOM</div>
+		<button onclick="change();">Change</button>
+		<button onclick="change2();">Bye</button>
+	</body>
+</html>
